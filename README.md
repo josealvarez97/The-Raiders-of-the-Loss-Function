@@ -5,7 +5,7 @@
 
 This repository contains the replication files used to come up with the results  from this little research paper.
 
-It is recommended to first take a look at [results_summary 2018-12-17 .md](results_summary 2018-12-17 .md) to better understand the details behind Table 1-3 in the paper.
+It is recommended to first take a look at [results_summary 2018-12-17 .md](https://github.com/josealvarez97/The-Raiders-of-the-Loss-Function/blob/master/Summary%20Output%20Files/results_summary%202018-12-17%20.md) to better understand the details behind Table 1-3 in the paper.
 
 Here's a list with a brief description of each of the replication files.
 
@@ -61,7 +61,7 @@ of different calls to either NSW.GenMatch.NoRe74() or NSW.GenMatch.R() and empha
 
 ****
 the output file is an .md file for
-easy examination on any mardown visualizer (e.g., GitHub). Check it out ([results_summary 2018-12-17 .md](results_summary 2018-12-17 .md))!
+easy examination on any mardown visualizer (e.g., GitHub). Check it out ([results_summary 2018-12-17 .md](https://github.com/josealvarez97/The-Raiders-of-the-Loss-Function/blob/master/Summary%20Output%20Files/results_summary%202018-12-17%20.md))!
 ****
 
 to run it, RUN FIRST!!!!!!
