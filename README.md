@@ -60,7 +60,7 @@ This script produces an output file that summarizes the matching results
 of different calls to either NSW.GenMatch.NoRe74() or NSW.GenMatch.R() and emphapasizing how the "loss" parameter varies.
 
 ****
-the output file is an .md file for
+**the output file** is an .md file for
 easy examination on any mardown visualizer (e.g., GitHub). Check it out ([results_summary 2018-12-17 .md](https://github.com/josealvarez97/The-Raiders-of-the-Loss-Function/blob/master/Summary%20Output%20Files/results_summary%202018-12-17%20.md))!
 ****
 
