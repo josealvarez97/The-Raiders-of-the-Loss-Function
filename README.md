@@ -81,7 +81,7 @@ to run it, RUN FIRST!!!!!!
 
 We devised two original alternative loss functions that aim to enhance the optimization procedure of the GenMatch function in the Matching package for R. For a through description, see the research paper.
 
-These are also defined in [loss.function.R](https://github.com/josealvarez97/The-Raiders-of-the-Loss-Function/blob/master/ReplicationFiles/loss.function.R). The diction of some comments might differ a little bit for the sake of presentation.
+These are also **defined in [loss.function.R](https://github.com/josealvarez97/The-Raiders-of-the-Loss-Function/blob/master/ReplicationFiles/loss.function.R)**. The diction of some comments might differ a little bit for the sake of presentation.
 
 #### *my.loss.function.9* - (Quadratically weighted sum of balance statistics)
 
