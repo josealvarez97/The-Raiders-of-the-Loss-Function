@@ -3,7 +3,7 @@
 
 ## Overview
 
-This repository contains the replication files used to come up with the results  from this little research paper.
+This repository contains the replication files used to come up with the results  from this little [research paper](https://github.com/josealvarez97/The-Raiders-of-the-Loss-Function/blob/master/Research%20Paper/RaidersOfTheLossFunction.pdf).
 
 **It is recommended** (assumming that the abstract, introduction, and overall discussion of the research paper has at least already been skimmed) **to first take a look at [results_summary 2018-12-17 .md](https://github.com/josealvarez97/The-Raiders-of-the-Loss-Function/blob/master/Summary%20Output%20Files/results_summary%202018-12-17%20.md) to better understand the details behind Table 1-3 (Matching Results) in the paper.** 
 
@@ -79,7 +79,7 @@ to run it, RUN FIRST!!!!!!
 
 ### Original Alternative Loss Functions
 
-We devised two original alternative loss functions that aim to enhance the optimization procedure of the GenMatch function in the Matching package for R. For a through description, see the research paper.
+We devised two original alternative loss functions that aim to enhance the optimization procedure of the GenMatch function in the Matching package for R. For a through description, see the [research paper](https://github.com/josealvarez97/The-Raiders-of-the-Loss-Function/blob/master/Research%20Paper/RaidersOfTheLossFunction.pdf).
 
 These are also **defined in [loss.function.R](https://github.com/josealvarez97/The-Raiders-of-the-Loss-Function/blob/master/ReplicationFiles/loss.function.R)**. The diction of some comments might differ a little bit for the sake of presentation.
 
