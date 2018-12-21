@@ -73,3 +73,77 @@ to run it, RUN FIRST!!!!!!
 * NSW.GenMatch.NoRe74.R (Original Lalonde Sample)
 
 * loss.function.R (contains the definitions for the loss functions...)
+
+
+## Some other highlights
+
+### Original Alternative Loss Functions
+
+We devised two original alternative loss functions that aim to enhance the optimization procedure of the GenMatch function in the Matching package for R. For a through description, see the research paper.
+
+#### *my.loss.function.9* - (Quadratically weighted sum of balance statistics)
+
+```R
+my.loss.function.9 = function(bal.statics.vec) {
+  
+  sorted.vec = sort(bal.statics.vec)
+  
+  
+  # using half of the vector...
+  # i.g., until the 50th percentile of the observations.
+  # Because, in general, those are the hardest to balance observations...
+  subvec = sorted.vec[1:length(sorted.vec)/2]
+  
+  
+  
+  weighted.sum.p.values = 0 
+  
+  
+  for (i in 1:length(subvec)) {
+    
+    p.value = sorted.vec[i]
+    
+    
+    weighted.value = p.value * (length(subvec) + 1 - i)^2
+    
+    weighted.sum.p.values = weighted.sum.p.values + weighted.value
+    
+  }
+  
+  
+  # For the sake of expliciteness
+  loss.value = weighted.sum.p.values 
+  
+  
+  return (loss.value)
+  
+  
+}
+```
+
+#### *my.subtraction.loss.func.3* - (Quadratically weighted sum of differences)
+
+```R
+my.subtraction.loss.func.3 = function(bal.statics.vec){
+  
+  sorted.vec = sort(bal.statics.vec)
+  
+  
+  total.loss = 0
+  for (i in 1:length(sorted.vec)) {
+    p.val.i = sorted.vec[i] #val between 0 and 1
+    
+    # 1 is the ideal 
+    loss.i = p.val.i - 1 
+    
+    total.loss = (total.loss + loss.i) * (length(sorted.vec) + 1 - i)^2
+  }
+  
+  # For the sake of expliciteness...
+  loss.value = total.loss
+  
+  
+  return (loss.value) 
+}
+
+```
