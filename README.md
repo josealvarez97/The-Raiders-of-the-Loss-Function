@@ -9,7 +9,7 @@ This repository contains the replication files used to come up with the results 
 
 Here's a list with a brief description of each of the replication files.
 
-### 1. [DataRetrieva.R](): 
+### 1. [DataRetrieval.R](https://github.com/josealvarez97/The-Raiders-of-the-Loss-Function/blob/master/ReplicationFiles/DataRetrieval.R): 
 
 This script produces:
 
@@ -25,7 +25,7 @@ This script produces:
 
 
 
-### 2. [loss.function.R](): 
+### 2. [loss.function.R](https://github.com/josealvarez97/The-Raiders-of-the-Loss-Function/blob/master/ReplicationFiles/loss.function.R): 
 
 This script contains each of the definitions of each of the different
 loss functions we tried out during our research. Including:
@@ -34,27 +34,31 @@ my.loss.function.9 (quadratically weighted sum of balance statistics)
 my.subtraction.loss.func.3 (quadratically weighted sum of differences)
 
 
-### 3. [NSW.GenMatch.NoRe74.R]():
+### 3. [NSW.GenMatch.NoRe74.R](https://github.com/josealvarez97/The-Raiders-of-the-Loss-Function/blob/master/ReplicationFiles/NSW.GenMatch.NoRe74.R):
 
 This script defines
 
-NSW.GenMatch.NoRE74() = function(nsw_obs_data, population = 100, max.gen = 100, wait.gen = 4, my.loss.f = 1), function that produces mout from GenMatch weights based on a NSW "faked" obs data set when re74 is not included.
+*NSW.GenMatch.NoRE74() = function(nsw_obs_data, population = 100, max.gen = 100, wait.gen = 4, my.loss.f = 1)*, 
+function that produces mout from GenMatch weights based on a NSW "faked" obs data set when re74 is not included.
 (aka, for the original LALONDE SAMPLE)
 
 and defines
 
-NSW.MeasureBalance.NoRE74 = function(nsw_obs_data, match.output) which returns the output MatchBalance, based on the output of NSW.GenMatch.NoRE74(). Similarly, it works for a NSW "faked" obs data set when re74 is not included.
+*NSW.MeasureBalance.NoRE74 = function(nsw_obs_data, match.output)*
+which returns the output MatchBalance, based on the output of NSW.GenMatch.NoRE74(). Similarly, it works for a NSW "faked" obs data set when re74 is not included.
 
-### 4. [NSW.GenMatch.R]():
+### 4. [NSW.GenMatch.R](https://github.com/josealvarez97/The-Raiders-of-the-Loss-Function/blob/master/ReplicationFiles/NSW.GenMatch.R):
 
-This script defines NSW.GenMatch() = function(nsw_obs_data, population = 100, max.gen = 100, wait.gen = 4, my.loss.f = 1) function that produces mout from GenMatch weights based on a NSW "faked" obs data set when re74 is ACTUALLY included.
+This script defines *NSW.GenMatch() = function(nsw_obs_data, population = 100, max.gen = 100, wait.gen = 4, my.loss.f = 1)* 
+function that produces mout from GenMatch weights based on a NSW "faked" obs data set when re74 is ACTUALLY included.
 (aka, for the DW sample and early RA sample)
 
 and defines
 
-NSW.MeasureBalance = function(nsw_obs_data, match.output) which returns the output MatchBalance, based on the output of NSW.GenMatch() similarly, it works for a NSW "faked" obs data set when re74 is ACTUALLY included.
+*NSW.MeasureBalance = function(nsw_obs_data, match.output)*
+which returns the output MatchBalance, based on the output of NSW.GenMatch() similarly, it works for a NSW "faked" obs data set when re74 is ACTUALLY included.
 
-### 5. [SummarizeResults.R]():
+### 5. [SummarizeResults.R](https://github.com/josealvarez97/The-Raiders-of-the-Loss-Function/blob/master/ReplicationFiles/SummarizeResults.R):
 
 This script produces an output file that summarizes the matching results
 of different calls to either NSW.GenMatch.NoRe74() or NSW.GenMatch.R() and emphapasizing how the "loss" parameter varies.
